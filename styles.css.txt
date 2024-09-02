@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.filters {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+}

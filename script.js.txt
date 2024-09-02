@@ -1,0 +1,14 @@
+function filterCars() {
+    var make = document.getElementById('make-filter').value.toLowerCase();
+    var cards = document.getElementsByClassName('car-card');
+
+    for (var i = 0; i < cards.length; i++) {
+        var cardMake = cards[i].getAttribute('data-make').toLowerCase();
+
+        if (make === "" || cardMake === make) {
+            cards[i].style.display = "block";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}

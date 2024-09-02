@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Car Inventory</h1>
+    <div class="filters">
+        <label for="make-filter">Make:</label>
+        <select id="make-filter" onchange="filterCars()">
+            <option value="">All</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+        </select>
+    </div>
+    <div id="car-container">
+        <div class="car-card" data-make="Toyota" data-model="Camry" data-year="2020" data-price="20000">
+            <img src="https://example.com/toyota-camry.jpg" alt="Toyota Camry 2020">
+            <h3>Toyota Camry</h3>
+            <p>Year: 2020</p>
+            <p>Price: $20,000</p>
+        </div>
+        <div class="car-card" data-make="Honda" data-model="Civic" data-year="2019" data-price="18000">
+            <img src="https://example.com/honda-civic.jpg" alt="Honda Civic 2019">
+            <h3>Honda Civic</h3>
+            <p>Year: 2019</p>
+            <p>Price: $18,000</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
